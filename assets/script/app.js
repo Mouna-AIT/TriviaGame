@@ -38,3 +38,15 @@ var questions = [{
 }];
 
 $("#start").on("click", function() {
+    // Display initial time countdown
+    $("#time").html("<h2>Time Remaining: 30 Seconds</h2>" + "<br>");
+
+      // Hide Start button
+      $(this).hide();
+
+    // Start timer countdown
+    run();
+   
+    // Display questions
+    
+   
