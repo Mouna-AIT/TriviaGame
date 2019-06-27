@@ -177,3 +177,113 @@ function displayResults() {
     $("#unanswered").html("Unanswered: " + unanswered);
 }
 
+// Function keeps score in terms of correct, incorrect, and unanswered (I would like to put this in a div to avoid repetition)
+function keepingScore() {
+
+    var userAnswer1 = $("input[name='answer1']:checked").val();
+    var userAnswer2 = $("input[name='answer2']:checked").val();
+    var userAnswer3 = $("input[name='answer3']:checked").val();
+    var userAnswer4 = $("input[name='answer4']:checked").val();
+    var userAnswer5 = $("input[name='answer5']:checked").val();
+    var userAnswer6 = $("input[name='answer6']:checked").val();
+    var userAnswer7 = $("input[name='answer7']:checked").val();
+
+    // Question 1
+    if (userAnswer1 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer1 == questions[0].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 2
+    if (userAnswer2 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer2 == questions[1].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 3
+    if (userAnswer3 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer3 == questions[2].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 4
+    if (userAnswer4 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer4 == questions[3].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 5
+    if (userAnswer5 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer5 == questions[4].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 6
+    if (userAnswer6 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer6 == questions[5].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }
+
+    // Question 7
+    if (userAnswer7 === undefined) {
+
+        unanswered++;
+    }
+    else if (userAnswer7 == questions[6].answer) {
+
+        correctAnswers++;
+    }
+    else {
+
+        incorrectAnswers++;
+    }  
+}
+
