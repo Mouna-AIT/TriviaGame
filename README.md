@@ -18,5 +18,3 @@ This project helps to understand the use of function timers using Javascript and
 
 
 
-
-
