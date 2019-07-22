@@ -20,13 +20,14 @@ body {
     font-size: 1rem;
     line-height: 24px;
     background: url("../images/backgrounds-blank-blue-953214.jpg");
+    background-size: cover;
 }
 
 h1 {
 
     margin: 20px 0 0 0;
     text-align: center;
-    font-size: 55px;
+    font-size: 40px;
     line-height: 90px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: var(--blue);
@@ -52,4 +53,15 @@ h1 {
 .main-content {
 
     padding: 5% 0;
+}
+
+@media (min-width:600px) {
+
+.btn {
+
+    font-size: 1.25rem;
+
+}
+
+
 }
